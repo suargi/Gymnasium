@@ -370,6 +370,17 @@ register(
     max_episode_steps=1000,
 )
 
+# Odysseia
+# ----------------------------------------
+
+register(
+    id="RocketLanderContinuous",
+    entry_point="gymnasium.envs.odysseia.rocket_lander:RocketLander",
+    kwargs={"continuous": True},
+    max_episode_steps=1000,
+    reward_threshold=200,
+)
+
 
 # --- For shimmy compatibility
 def _raise_shimmy_error(*args: Any, **kwargs: Any):
