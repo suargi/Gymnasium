@@ -382,7 +382,7 @@ register(
 )
 
 register(
-    id="2dCyliinderAFC_nek",
+    id="2dCylinderAFC_nek",
     entry_point="gymnasium.envs.odysseia.Env2DCylinderAFC_nek:Env2DCylinderNek",
     kwargs={"Observation": "wake",
             "lift_fct": 0.2,
