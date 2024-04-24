@@ -381,6 +381,19 @@ register(
     reward_threshold=200,
 )
 
+register(
+    id="2dCyliinderAFC_nek",
+    entry_point="gymnasium.envs.odysseia.Env2DCylinderAFC_nek:Env2DCylinderNek",
+    kwargs={"Observation": "wake",
+            "lift_fct": 0.2,
+            "mfr_fct": 0.1,
+            "TimeDerivative": False,
+            "TA": False,
+            "drag_ref": 0},
+    max_episode_steps=100,
+    reward_threshold=0.09,
+)
+
 
 # --- For shimmy compatibility
 def _raise_shimmy_error(*args: Any, **kwargs: Any):
