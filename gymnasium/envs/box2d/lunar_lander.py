@@ -319,12 +319,6 @@ class LunarLander(gym.Env, EzPickle):
         # useful range is -1 .. +1, but spikes can be higher
         self.observation_space = spaces.Box(low, high)
 
-        print(self.observation_space)
-
-#        assert isinstance(self.observation_space, spaces.Dict), (
-#            "HOLA"
-#        )
-
         if self.continuous:
             # Action is two floats [main engine, left-right engines].
             # Main engine: -1..0 off, 0..+1 throttle from 50% to 100% power. Engine can't work with less than 50% power.
