@@ -384,14 +384,15 @@ register(
 register(
     id="2dCylinderAFC_nek",
     entry_point="gymnasium.envs.odysseia.Env2DCylinderAFC_nek:Env2DCylinderNek",
-    kwargs={"Observation": "wake",
+    kwargs={"observation": "wake",
             "lift_fct": 0.2,
             "mfr_fct": 0.1,
-            "TimeDerivative": False,
-            "TA": False,
-            "drag_ref": 0},
-    max_episode_steps=100,
-    reward_threshold=0.09,
+            "time_derivative": True,
+            "time_awareness": False,
+            "drag_ref": 0.26900652 * 2,
+            "cfd_dir": "~/res/rl/tests/cfd/"},
+    max_episode_steps=10,
+    reward_threshold=0.009,
 )
 
 
