@@ -375,7 +375,7 @@ register(
 
 register(
     id="RocketLanderContinuous",
-    entry_point="gymnasium.envs.odysseia.rocket_lander:RocketLander",
+    entry_point="gymnasium.envs.odysseia.rocket_lander:LunarLander",
     kwargs={"continuous": True},
     max_episode_steps=1000,
     reward_threshold=200,
@@ -390,7 +390,7 @@ register(
             "time_derivative": True,
             "time_awareness": False,
             "drag_ref": 0.26900652 * 2,
-            "cfd_dir": "~/res/rl/tests/cfd/"},
+            "cfd_dir": "~/res/rl/tests/2d_cyl_nek/cfd/"},
     max_episode_steps=10,
     reward_threshold=0.009,
 )
