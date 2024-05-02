@@ -389,7 +389,7 @@ register(
             "mfr_fct": 0.1,
             "time_derivative": True,
             "time_awareness": False,
-            "drag_ref": 0.26900652 * 2,
+            "drag_ref": 0.71408082 * 2,
             "cfd_dir": "~/res/rl/tests/2d_cyl_nek/cfd/"},
     max_episode_steps=100,
     reward_threshold=0.009,
