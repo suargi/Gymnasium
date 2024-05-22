@@ -391,7 +391,8 @@ register(
             "time_awareness": False,
             "drag_ref": 0.71408082 * 2,
             "cfd_dir": "~/res/rl/tests/2d_cyl_nek/cfd/",
-            "saveObs": False},
+            "saveObs": False,
+            "transform": None},
     max_episode_steps=100,
     reward_threshold=0.009,
 )
