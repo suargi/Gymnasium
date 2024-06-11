@@ -9,7 +9,7 @@ from gymnasium.envs.registration import (
     registry,
     spec,
 )
-import odysseia.rl.env.Env2DCylinderAFC as AFCenv
+from odysseia.rl.env.Env2DCylinderAFC import TARGET_DRAG, REWARD_THRESHOLD, EPISODE_DURATION
 
 
 # Classic
@@ -390,12 +390,12 @@ register(
             "mfr_fct": 0.1,
             "time_derivative": True,
             "time_awareness": False,
-            "drag_ref": AFCenv.TARGET_DRAG,
+            "drag_ref": TARGET_DRAG,
             "cfd_dir": "~/res/rl/tests/2d_cyl_nek/cfd/",
             "saveObs": False,
             "transform": None},
-    max_episode_steps=AFCenv.EPISODE_DURATION,
-    reward_threshold=AFCenv.REWARD_THRESHOLD,
+    max_episode_steps=EPISODE_DURATION,
+    reward_threshold=REWARD_THRESHOLD,
 )
 
 
