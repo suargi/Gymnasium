@@ -384,7 +384,8 @@ register(
             "drag_ref": TARGET_DRAG,
             "cfd_dir": "~/res/rl/tests/2d_cyl_nek/cfd/",
             "saveObs": False,
-            "transform": None},
+            "transform": None,
+            "saveTrace": False},
     max_episode_steps=EPISODE_DURATION,
     reward_threshold=REWARD_THRESHOLD,
 )
