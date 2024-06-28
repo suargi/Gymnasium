@@ -373,15 +373,6 @@ register(
 
 # Odysseia
 # ----------------------------------------
-
-register(
-    id="RocketLanderContinuous",
-    entry_point="gymnasium.envs.odysseia.rocket_lander:LunarLander",
-    kwargs={"continuous": True},
-    max_episode_steps=1000,
-    reward_threshold=200,
-)
-
 register(
     id="2dCylinderAFC_nek",
     entry_point="gymnasium.envs.odysseia.Env2DCylinderAFC_nek:Env2DCylinderNek",
