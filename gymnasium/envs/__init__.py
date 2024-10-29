@@ -385,7 +385,8 @@ register(
             "cfd_dir": "~/res/rl/tests/2d_cyl_nek/cfd/",
             "saveObs": False,
             "transform": None,
-            "saveTrace": False},
+            "saveTrace": False,
+            "ic_prob": 0.2},
     max_episode_steps=EPISODE_DURATION,
     reward_threshold=REWARD_THRESHOLD,
 )
