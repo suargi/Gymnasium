@@ -386,7 +386,8 @@ register(
             "saveObs": False,
             "transform": None,
             "saveTrace": False,
-            "ic_prob": 0.2},
+            "ic_prob": 0.2,
+            "num_cpu": 12},
     max_episode_steps=EPISODE_DURATION,
     reward_threshold=REWARD_THRESHOLD,
 )
