@@ -387,7 +387,9 @@ register(
             "transform": None,
             "saveTrace": False,
             "ic_prob": 0.2,
-            "num_cpu": 12},
+            "num_cpu": 12,
+            "action_bound": 0.15,
+            "action_space": 3},
     max_episode_steps=EPISODE_DURATION,
     reward_threshold=REWARD_THRESHOLD,
 )
